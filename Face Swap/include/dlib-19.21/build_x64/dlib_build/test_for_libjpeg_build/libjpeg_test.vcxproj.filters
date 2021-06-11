@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\dlib-19.21\dlib\cmake_utils\test_for_libjpeg\libjpeg_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dlib-19.21\dlib\cmake_utils\test_for_libjpeg\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{123E22D1-046E-3F7F-A344-7754850A1436}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

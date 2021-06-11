@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\dlib-19.21\dlib\cmake_utils\test_for_libpng\libpng_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dlib-19.21\dlib\cmake_utils\test_for_libpng\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CF58E392-AF00-34E9-9E35-90B519FD44F0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

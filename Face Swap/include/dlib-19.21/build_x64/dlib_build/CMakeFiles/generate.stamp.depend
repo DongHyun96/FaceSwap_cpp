@@ -1,0 +1,26 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/FindCUDA.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/FindCUDA/run_nvcc.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/FindCUDA/select_compute_arch.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/FindJPEG.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/FindPNG.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/FindZLIB.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/SelectLibraryConfigurations.cmake
+C:/dlib-19.21/build_x64/dlib_build/CMakeFiles/dlib.dir/cuda/dlib_generated_cuda_dlib.cu.obj.cmake.pre-gen
+C:/dlib-19.21/build_x64/dlib_build/CMakeFiles/dlib.dir/cuda/dlib_generated_cuda_dlib.cu.obj.depend
+C:/dlib-19.21/build_x64/dlib_build/CMakeFiles/dlib.dir/cuda/dlib_generated_cusolver_dlibapi.cu.obj.cmake.pre-gen
+C:/dlib-19.21/build_x64/dlib_build/CMakeFiles/dlib.dir/cuda/dlib_generated_cusolver_dlibapi.cu.obj.depend
+C:/dlib-19.21/dlib/CMakeLists.txt
+C:/dlib-19.21/dlib/cmake_utils/find_libjpeg.cmake
+C:/dlib-19.21/dlib/cmake_utils/find_libpng.cmake
+C:/dlib-19.21/dlib/cmake_utils/release_build_by_default
+C:/dlib-19.21/dlib/cmake_utils/set_compiler_specific_options.cmake
+C:/dlib-19.21/dlib/cmake_utils/test_for_cudnn/find_cudnn.txt
+C:/dlib-19.21/dlib/cmake_utils/use_cpp_11.cmake

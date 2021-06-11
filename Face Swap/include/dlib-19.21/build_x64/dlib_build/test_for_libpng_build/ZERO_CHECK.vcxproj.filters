@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\dlib-19.21\build_x64\dlib_build\test_for_libpng_build\CMakeFiles\6c0ffa4b977ad0e92f4e4d35990ca635\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{933C4F9A-E0CF-33B9-97BE-3546C2F88935}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

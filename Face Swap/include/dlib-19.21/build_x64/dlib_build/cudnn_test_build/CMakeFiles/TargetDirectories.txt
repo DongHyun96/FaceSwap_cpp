@@ -1,0 +1,3 @@
+C:/dlib-19.21/build_x64/dlib_build/cudnn_test_build/CMakeFiles/cudnn_test.dir
+C:/dlib-19.21/build_x64/dlib_build/cudnn_test_build/CMakeFiles/ALL_BUILD.dir
+C:/dlib-19.21/build_x64/dlib_build/cudnn_test_build/CMakeFiles/ZERO_CHECK.dir

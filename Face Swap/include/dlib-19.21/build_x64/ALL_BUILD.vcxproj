@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5E19B965-5A72-3885-8EB1-5A7F111C0835}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dlib-19.21\examples\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/dlib-19.21/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/dlib-19.21/examples -BC:/dlib-19.21/build_x64 --check-stamp-file C:/dlib-19.21/build_x64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\dlib-19.21\build_x64\CMakeFiles\3.19.3\CMakeCCompiler.cmake;C:\dlib-19.21\build_x64\CMakeFiles\3.19.3\CMakeCXXCompiler.cmake;C:\dlib-19.21\build_x64\CMakeFiles\3.19.3\CMakeRCCompiler.cmake;C:\dlib-19.21\build_x64\CMakeFiles\3.19.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dlib-19.21\build_x64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/dlib-19.21/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/dlib-19.21/examples -BC:/dlib-19.21/build_x64 --check-stamp-file C:/dlib-19.21/build_x64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\dlib-19.21\build_x64\CMakeFiles\3.19.3\CMakeCCompiler.cmake;C:\dlib-19.21\build_x64\CMakeFiles\3.19.3\CMakeCXXCompiler.cmake;C:\dlib-19.21\build_x64\CMakeFiles\3.19.3\CMakeRCCompiler.cmake;C:\dlib-19.21\build_x64\CMakeFiles\3.19.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dlib-19.21\build_x64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/dlib-19.21/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/dlib-19.21/examples -BC:/dlib-19.21/build_x64 --check-stamp-file C:/dlib-19.21/build_x64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\dlib-19.21\build_x64\CMakeFiles\3.19.3\CMakeCCompiler.cmake;C:\dlib-19.21\build_x64\CMakeFiles\3.19.3\CMakeCXXCompiler.cmake;C:\dlib-19.21\build_x64\CMakeFiles\3.19.3\CMakeRCCompiler.cmake;C:\dlib-19.21\build_x64\CMakeFiles\3.19.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dlib-19.21\build_x64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/dlib-19.21/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/dlib-19.21/examples -BC:/dlib-19.21/build_x64 --check-stamp-file C:/dlib-19.21/build_x64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\dlib-19.21\build_x64\CMakeFiles\3.19.3\CMakeCCompiler.cmake;C:\dlib-19.21\build_x64\CMakeFiles\3.19.3\CMakeCXXCompiler.cmake;C:\dlib-19.21\build_x64\CMakeFiles\3.19.3\CMakeRCCompiler.cmake;C:\dlib-19.21\build_x64\CMakeFiles\3.19.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dlib-19.21\build_x64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\ZERO_CHECK.vcxproj">
+      <Project>{9C8E2870-A139-3323-BB51-A8F2593226F0}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\3d_point_cloud_ex.vcxproj">
+      <Project>{4B5FAF1C-3C6E-3771-8090-D8539BFEA435}</Project>
+      <Name>3d_point_cloud_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\assignment_learning_ex.vcxproj">
+      <Project>{C48575B4-51F0-3F18-B04C-62DC5CD9A9AF}</Project>
+      <Name>assignment_learning_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\bayes_net_ex.vcxproj">
+      <Project>{EC99795D-927E-37F2-9561-2EE669257834}</Project>
+      <Name>bayes_net_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\bayes_net_from_disk_ex.vcxproj">
+      <Project>{D05372AE-92FA-38E8-9B0E-ACA842D26C59}</Project>
+      <Name>bayes_net_from_disk_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\bayes_net_gui_ex.vcxproj">
+      <Project>{12D627A1-5B5D-33C2-8732-B4E45069CF82}</Project>
+      <Name>bayes_net_gui_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\bridge_ex.vcxproj">
+      <Project>{0BACBE5C-8911-3AA4-BEF1-F10726BFB10E}</Project>
+      <Name>bridge_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\bsp_ex.vcxproj">
+      <Project>{732F185F-13FE-31EC-B592-55AA874F70A0}</Project>
+      <Name>bsp_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\compress_stream_ex.vcxproj">
+      <Project>{78566CB2-E420-3B10-B31D-80794A99C978}</Project>
+      <Name>compress_stream_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\config_reader_ex.vcxproj">
+      <Project>{187FBE38-FFA0-39BE-AFEB-49337614BCED}</Project>
+      <Name>config_reader_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\custom_trainer_ex.vcxproj">
+      <Project>{9FCD19E9-970D-3AF1-82AE-6BAD7604B513}</Project>
+      <Name>custom_trainer_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\dir_nav_ex.vcxproj">
+      <Project>{E8349BB3-671C-30FF-BD3F-842671B6058D}</Project>
+      <Name>dir_nav_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\dlib_build\dlib.vcxproj">
+      <Project>{233876F7-02DA-32FF-BED3-EDDE07B3EB21}</Project>
+      <Name>dlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\dnn_dcgan_train_ex.vcxproj">
+      <Project>{B3927CB3-5E6E-31A8-B1FA-52F146852CB7}</Project>
+      <Name>dnn_dcgan_train_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\dnn_face_recognition_ex.vcxproj">
+      <Project>{3FFA305B-3DBF-3520-BB14-B23014BA8AD8}</Project>
+      <Name>dnn_face_recognition_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\dnn_imagenet_ex.vcxproj">
+      <Project>{0F5AA8A8-57B1-3CBA-B6C6-9F3834163B90}</Project>
+      <Name>dnn_imagenet_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\dnn_imagenet_train_ex.vcxproj">
+      <Project>{E8E82600-4A5A-3A63-BD78-B4A66212B519}</Project>
+      <Name>dnn_imagenet_train_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\dnn_inception_ex.vcxproj">
+      <Project>{AE4717CB-248B-39BE-BF4D-CE8A30B94639}</Project>
+      <Name>dnn_inception_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\dnn_instance_segmentation_ex.vcxproj">
+      <Project>{50D1216F-FA1B-3137-B969-87B68F743F08}</Project>
+      <Name>dnn_instance_segmentation_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\dnn_instance_segmentation_train_ex.vcxproj">
+      <Project>{3C69BA6D-B316-3BDA-A810-9BBF04C5A7A1}</Project>
+      <Name>dnn_instance_segmentation_train_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\dnn_introduction2_ex.vcxproj">
+      <Project>{F99746BA-E798-3F97-B86D-183B83B18673}</Project>
+      <Name>dnn_introduction2_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\dnn_introduction3_ex.vcxproj">
+      <Project>{7032AFBD-B2F4-3EA0-ACF6-076C7FCAA1A5}</Project>
+      <Name>dnn_introduction3_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\dnn_introduction_ex.vcxproj">
+      <Project>{DE54F03C-1CD5-3B97-BB03-D69E3B26A791}</Project>
+      <Name>dnn_introduction_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\dnn_metric_learning_ex.vcxproj">
+      <Project>{7D4E20DA-CE85-3B5A-AE28-75F33737BCC0}</Project>
+      <Name>dnn_metric_learning_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\dnn_metric_learning_on_images_ex.vcxproj">
+      <Project>{D6C0A3C2-B16E-3375-AD36-8907A15A01D1}</Project>
+      <Name>dnn_metric_learning_on_images_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\dnn_mmod_dog_hipsterizer.vcxproj">
+      <Project>{5794E1FB-996C-39C2-BFEA-EEDA4A6D9499}</Project>
+      <Name>dnn_mmod_dog_hipsterizer</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\dnn_mmod_ex.vcxproj">
+      <Project>{012476F4-48AC-32D9-B20E-076CE3F79E91}</Project>
+      <Name>dnn_mmod_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\dnn_mmod_face_detection_ex.vcxproj">
+      <Project>{28AD8D2F-6E8B-3458-AF17-B582CF9E0CD0}</Project>
+      <Name>dnn_mmod_face_detection_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\dnn_mmod_find_cars2_ex.vcxproj">
+      <Project>{B5D469CD-94F2-3B2F-88D0-320837BA4A18}</Project>
+      <Name>dnn_mmod_find_cars2_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\dnn_mmod_find_cars_ex.vcxproj">
+      <Project>{BD48B71D-F702-30EC-B1AB-6D5988531CAA}</Project>
+      <Name>dnn_mmod_find_cars_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\dnn_mmod_train_find_cars_ex.vcxproj">
+      <Project>{1644BC59-D358-3F3D-9C20-2A766709C769}</Project>
+      <Name>dnn_mmod_train_find_cars_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\dnn_semantic_segmentation_ex.vcxproj">
+      <Project>{71B22263-1617-3F7E-91A8-D5BE06FDEBA9}</Project>
+      <Name>dnn_semantic_segmentation_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\dnn_semantic_segmentation_train_ex.vcxproj">
+      <Project>{87E9023F-E0AF-3FA4-A9AB-7470B0005560}</Project>
+      <Name>dnn_semantic_segmentation_train_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\empirical_kernel_map_ex.vcxproj">
+      <Project>{DABA4D23-5E72-3500-B28E-F47B3F27214A}</Project>
+      <Name>empirical_kernel_map_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\face_detection_ex.vcxproj">
+      <Project>{AF16A773-60F8-3CDC-A5DB-3B24A0738F8B}</Project>
+      <Name>face_detection_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\face_landmark_detection_ex.vcxproj">
+      <Project>{411D70DE-C506-3E57-88F0-05DFEBD5D011}</Project>
+      <Name>face_landmark_detection_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\fhog_ex.vcxproj">
+      <Project>{A6546E9C-B6AE-3C45-98BF-072C3CF5E69E}</Project>
+      <Name>fhog_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\fhog_object_detector_ex.vcxproj">
+      <Project>{14B7EA90-D7C5-3402-9ABB-0C78E0A9E43D}</Project>
+      <Name>fhog_object_detector_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\file_to_code_ex.vcxproj">
+      <Project>{FAF47C2E-6C37-366E-90E3-AE2C3D56BCC9}</Project>
+      <Name>file_to_code_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\graph_labeling_ex.vcxproj">
+      <Project>{0AF80FF0-C3CF-37A7-BBAD-BD6611B1892C}</Project>
+      <Name>graph_labeling_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\gui_api_ex.vcxproj">
+      <Project>{12EA460F-4ED5-3B86-9BA1-F867ECAC0F77}</Project>
+      <Name>gui_api_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\hough_transform_ex.vcxproj">
+      <Project>{B6130DF4-2750-3522-8FE7-EC70BB6678B9}</Project>
+      <Name>hough_transform_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\image_ex.vcxproj">
+      <Project>{A3ACC5EC-4717-396E-9D23-965B1518A3E1}</Project>
+      <Name>image_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\integrate_function_adapt_simp_ex.vcxproj">
+      <Project>{DBF3E8A3-F8B0-392E-ABA3-7641991DE95A}</Project>
+      <Name>integrate_function_adapt_simp_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\iosockstream_ex.vcxproj">
+      <Project>{F51D1CCB-05DF-3BC3-8310-2A0662DD390C}</Project>
+      <Name>iosockstream_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\kcentroid_ex.vcxproj">
+      <Project>{85CFA236-D4BF-3AB7-BF09-B3F0E72E2D80}</Project>
+      <Name>kcentroid_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\kkmeans_ex.vcxproj">
+      <Project>{F04BFA51-E12D-3455-8D85-8C6FBF2DF65C}</Project>
+      <Name>kkmeans_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\krls_ex.vcxproj">
+      <Project>{2D840C2C-ABEA-333A-8357-43215980CEA9}</Project>
+      <Name>krls_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\krls_filter_ex.vcxproj">
+      <Project>{DEB741DF-BECB-360F-999F-C81DAD8F9AF9}</Project>
+      <Name>krls_filter_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\krr_classification_ex.vcxproj">
+      <Project>{BE910D4F-A403-3A84-9D09-EF35D09098B0}</Project>
+      <Name>krr_classification_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\krr_regression_ex.vcxproj">
+      <Project>{A128A6E7-9FF0-333B-8D4C-A1D69153D4B1}</Project>
+      <Name>krr_regression_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\learning_to_track_ex.vcxproj">
+      <Project>{4B0660B4-E306-3490-A94D-28870CB4DB43}</Project>
+      <Name>learning_to_track_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\least_squares_ex.vcxproj">
+      <Project>{C79C7A6A-81FA-3EBF-8FE5-637C32812570}</Project>
+      <Name>least_squares_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\linear_manifold_regularizer_ex.vcxproj">
+      <Project>{183546DD-0117-3068-9AD3-8A284FE05E36}</Project>
+      <Name>linear_manifold_regularizer_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\logger_custom_output_ex.vcxproj">
+      <Project>{D41D39F5-194F-31EE-937F-D7D27356BF36}</Project>
+      <Name>logger_custom_output_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\logger_ex.vcxproj">
+      <Project>{9DF277CA-15A3-3B20-96E7-C25F778F8BA5}</Project>
+      <Name>logger_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\logger_ex_2.vcxproj">
+      <Project>{72AC782D-F0B3-3147-9BD8-4360B3A17438}</Project>
+      <Name>logger_ex_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\matrix_ex.vcxproj">
+      <Project>{186C6FF7-15BA-34A1-A6DB-C9BA3C152819}</Project>
+      <Name>matrix_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\matrix_expressions_ex.vcxproj">
+      <Project>{7EE3D9B0-05A9-3F16-91D4-5538239E0EF4}</Project>
+      <Name>matrix_expressions_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\max_cost_assignment_ex.vcxproj">
+      <Project>{01894783-D920-3209-8114-091C34DDDB2C}</Project>
+      <Name>max_cost_assignment_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\member_function_pointer_ex.vcxproj">
+      <Project>{5886D99E-4355-31B0-AD6F-02EDB4990B01}</Project>
+      <Name>member_function_pointer_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\mlp_ex.vcxproj">
+      <Project>{B26E1DFA-BDDE-333E-9066-AA4F619070D8}</Project>
+      <Name>mlp_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\model_selection_ex.vcxproj">
+      <Project>{D1371E4A-1348-3CA2-84E2-52F0573E3887}</Project>
+      <Name>model_selection_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\mpc_ex.vcxproj">
+      <Project>{9E5887DC-7320-3FB2-AD26-F393EE6CE0D4}</Project>
+      <Name>mpc_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\multiclass_classification_ex.vcxproj">
+      <Project>{9FDE1CF1-FCC7-302E-A517-E3E91840D4EB}</Project>
+      <Name>multiclass_classification_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\multithreaded_object_ex.vcxproj">
+      <Project>{91C7F5AB-2E94-324C-8434-B29181CE2466}</Project>
+      <Name>multithreaded_object_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\object_detector_advanced_ex.vcxproj">
+      <Project>{10E0007A-0AB9-3F4D-8016-91C019A30404}</Project>
+      <Name>object_detector_advanced_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\object_detector_ex.vcxproj">
+      <Project>{6CEBBBE6-6C2B-3F94-917A-A924B6A755C2}</Project>
+      <Name>object_detector_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\one_class_classifiers_ex.vcxproj">
+      <Project>{F40E75C4-667E-32AA-AB6D-8893F0ADAC0F}</Project>
+      <Name>one_class_classifiers_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\optimization_ex.vcxproj">
+      <Project>{299602B5-054D-3C06-B725-10E09AD53756}</Project>
+      <Name>optimization_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\parallel_for_ex.vcxproj">
+      <Project>{FDAEAD98-3758-31AB-852A-C4FE190C50D9}</Project>
+      <Name>parallel_for_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\pipe_ex.vcxproj">
+      <Project>{D8FED40D-0715-314E-B91F-6A69A05D2584}</Project>
+      <Name>pipe_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\pipe_ex_2.vcxproj">
+      <Project>{28A9F921-45D5-3DC5-B980-8BD8E77B5511}</Project>
+      <Name>pipe_ex_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\quantum_computing_ex.vcxproj">
+      <Project>{8698619E-DE88-3DEE-BD3D-CCA207567674}</Project>
+      <Name>quantum_computing_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\queue_ex.vcxproj">
+      <Project>{5BA2AA92-B506-30C3-B6CB-C96172BC005C}</Project>
+      <Name>queue_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\random_cropper_ex.vcxproj">
+      <Project>{46D3AE3A-5DB6-3764-8D4D-6452AD98FDFD}</Project>
+      <Name>random_cropper_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\rank_features_ex.vcxproj">
+      <Project>{A50E1DBB-E338-378B-B992-ED3D028D9179}</Project>
+      <Name>rank_features_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\running_stats_ex.vcxproj">
+      <Project>{3DB4EBFD-8B9A-389A-A8CB-6B9F954DDEA6}</Project>
+      <Name>running_stats_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\rvm_ex.vcxproj">
+      <Project>{332B9814-6674-34CF-A9F9-BA91D433ABC7}</Project>
+      <Name>rvm_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\rvm_regression_ex.vcxproj">
+      <Project>{203D2ED4-7185-3340-B39C-95287C5B4B3F}</Project>
+      <Name>rvm_regression_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\sequence_labeler_ex.vcxproj">
+      <Project>{049D691E-5BBA-3ED1-B41F-305623C064EF}</Project>
+      <Name>sequence_labeler_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\sequence_segmenter_ex.vcxproj">
+      <Project>{E6B9993A-CC78-34AC-B0EA-1615D7609877}</Project>
+      <Name>sequence_segmenter_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\server_http_ex.vcxproj">
+      <Project>{E9E12B0E-36D8-3140-9B58-0186D9AA26B8}</Project>
+      <Name>server_http_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\server_iostream_ex.vcxproj">
+      <Project>{3E0D9A9E-77C6-357D-B62D-63183E0B0D7A}</Project>
+      <Name>server_iostream_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\sockets_ex.vcxproj">
+      <Project>{2ADEF367-FBCF-3904-8575-D1F511C4EBAD}</Project>
+      <Name>sockets_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\sockstreambuf_ex.vcxproj">
+      <Project>{2C63383A-7BAE-37BA-947B-D58397A331AF}</Project>
+      <Name>sockstreambuf_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\sqlite_ex.vcxproj">
+      <Project>{52E25E6B-07F6-334C-AAC2-EEE2287E506D}</Project>
+      <Name>sqlite_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\std_allocator_ex.vcxproj">
+      <Project>{B45F4F33-EA5F-3099-9ECB-DA30AF0BC3D2}</Project>
+      <Name>std_allocator_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\surf_ex.vcxproj">
+      <Project>{A4E5A11D-5467-33CE-8F0A-B7DCA26D2551}</Project>
+      <Name>surf_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\svm_c_ex.vcxproj">
+      <Project>{69CE0B31-67AE-39FC-B19C-835CD38C89EC}</Project>
+      <Name>svm_c_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\svm_ex.vcxproj">
+      <Project>{8E7EB5C7-26AD-39E2-BF51-B7AF5F987D80}</Project>
+      <Name>svm_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\svm_pegasos_ex.vcxproj">
+      <Project>{7E84906B-29A9-3561-859C-A94A31325963}</Project>
+      <Name>svm_pegasos_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\svm_rank_ex.vcxproj">
+      <Project>{BA0BAFAD-4313-305D-A2F8-EA110C903020}</Project>
+      <Name>svm_rank_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\svm_sparse_ex.vcxproj">
+      <Project>{B24BADA9-1561-3568-88B3-C843F3502C7C}</Project>
+      <Name>svm_sparse_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\svm_struct_ex.vcxproj">
+      <Project>{DB92DE57-2147-3B92-AC82-BE735A4FA8F3}</Project>
+      <Name>svm_struct_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\svr_ex.vcxproj">
+      <Project>{D6166602-6C84-37F3-8C1D-8E3FEC1C0C10}</Project>
+      <Name>svr_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\thread_function_ex.vcxproj">
+      <Project>{C8082139-119A-3594-9D50-D4A9BE789855}</Project>
+      <Name>thread_function_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\thread_pool_ex.vcxproj">
+      <Project>{043728E3-1FEB-3FFF-8270-99E8AC5A2F7F}</Project>
+      <Name>thread_pool_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\threaded_object_ex.vcxproj">
+      <Project>{273B285F-D217-393C-BC22-698947013192}</Project>
+      <Name>threaded_object_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\threads_ex.vcxproj">
+      <Project>{C9846B4D-B62B-3B09-A5EB-6BFF9A2C5146}</Project>
+      <Name>threads_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\timer_ex.vcxproj">
+      <Project>{EFF480B2-3792-3C9B-8C03-F661327D3826}</Project>
+      <Name>timer_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\train_object_detector.vcxproj">
+      <Project>{8B583B69-A4C1-3F56-8391-779AA2A05AD6}</Project>
+      <Name>train_object_detector</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\train_shape_predictor_ex.vcxproj">
+      <Project>{51B3E8AD-FAB2-3635-9A69-D6686B396A6F}</Project>
+      <Name>train_shape_predictor_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\using_custom_kernels_ex.vcxproj">
+      <Project>{93C01E1B-8F8B-3C61-AB86-530626150665}</Project>
+      <Name>using_custom_kernels_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\video_tracking_ex.vcxproj">
+      <Project>{295E589E-88F6-3458-9040-B4113592024E}</Project>
+      <Name>video_tracking_ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dlib-19.21\build_x64\xml_parser_ex.vcxproj">
+      <Project>{4D9FA332-07BE-3CC5-ABCF-8C9C90F4706B}</Project>
+      <Name>xml_parser_ex</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
